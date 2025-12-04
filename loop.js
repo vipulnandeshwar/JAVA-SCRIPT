@@ -1,53 +1,63 @@
-// console.log("Hello");
-// console.log("Hello");
-// console.log("Hello");
-// console.log("Hello");
-// console.log("Hello");
-
-
-for(let a=1;a<=5;a++){
-    console.log("Hello");
-    console.log("\n");
-}
-
-let x="";
-for(let a=1;a<=5;a++){
-    console.log("Hello");
-    x+="hrllo \n"
-}
-
-console.log(x);
-for(let a=1;a<=5;a++){
-    console.log("Hello"+a);
-}
-document.write("<br>")
-for(let i=1;i<=5;i++){
-    for(let j=1;j<=5;j++){
-        document.writeln("*")
+let str1 = ""
+for(let i=1; i<=5; i++){
+    for(let j=1; j<=i; j++){
+        str1 += "* ";
     }
-    document.writeln("<br>")
-}
-
-let str1=""
-for(let i=1;i<=5;i++){
-    for(let j=1;j<=5;j++){
-        str1+="* "
-    }
-    str1+="\n"
+    str1 += "\n";
 }
 console.log(str1);
 
+let str2 = ""
+for(let i=1; i<=5; i++){
+    for(let j=1; j<=5-i; j++){
+        str2 += "  ";
+    }
+    for(let k=1; k<=i; k++){
+        str2 += "* ";
+    }
+    str2 += "\n"
+}
+console.log(str2);
 
-let k=2
-while (k<=5) {
-    console.log("hello");
-    k++
+let str3 = ""
+for(let i=1; i<=5; i++){
+    for(let j=1; j<=5-i; j++){
+        str3 += "  ";
+    }
+    for(let k=1; k<=2*i-1; k++){
+        str3 += "* ";
+    }
+    str3 += "\n";
+}
+console.log(str3);
+
+
+
+let str4="", space1=3,star=1;
+for(let i=1;i<=7;i++){
+    for(let j=1;j<=space1;j++){
+        str4+=""
+    }
+    for(let k=1;k<=star;k++){
+        str4+="*"
+    }
+    str4+="\n"
+    if(i<4){
+        space1--
+        star+=2
+    }
+    else{
+        space1++;
+        star-=2;
+    }
 }
 
-let w=1
-do {
-    console.log("hi do while");
-    w++;
-    
-} 
-while (w<=5)
+//Number Pattern
+//12345
+//12345
+//12345
+//12345
+//12345
+
+let num=""
+for(let i=1;i<=5;i++)
