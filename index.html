@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #d1{
+            border: 2px solid;
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            text-align: center;
+        }
+        #d2{
+             border: 2px solid;
+            width: 150px;
+            height: 150px;
+            margin: auto;
+        }
+         #d3{
+            border: 2px solid;
+            width: 120px;
+            height: 120px;
+            margin: auto;
+        }
+        aside{
+             border: 2px solid;
+            width: 150px;
+            height: 150px;
+            margin: auto;
+        }
+         #d4{
+            border: 2px solid;
+            width: 120px;
+            height: 120px;
+            margin: auto;
+        }
+         #d5{
+            border: 2px solid;
+            width: 80px;
+            height: 80px;
+            margin: auto;
+        }
+       
+
+    </style>
+    <div id="d1">
+        grand Parent 1
+        <section id="d2">
+            parent 1
+            <div id="d3"> child 1-1</div>
+        </section>
+        <aside>
+            parent 2
+            <section id="d4">chlid 2-1
+                <div id="d5">child 2-2</div>
+            </section>
+            
+        </aside>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
