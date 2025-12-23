@@ -1,31 +1,49 @@
-// literal way
-let arr =[]
+let arr=[10,20,30,40,50]
 console.log(arr);
 
-// new keyword
-let arr1 = new Array()
+let a=arr.reduce((acc,v)=>{
+    console.log(acc,v);
+    return acc+v
+},5)
+console.log(a);
+
+let b=arr.map((e)=>{
+    return e+5
+})
+console.log(b);
+
+//flat
+let arr1=[10,[20,30],[[[40]]],[50[[[[[[[[[[[60]]]]]]]]]]]]]
 console.log(arr1);
+console.log(arr1.flat(Infinity));
 
-// Constructor
-let arr2 = Array()
-console.log(arr2);
+let arr2=[10,20,30,40,50]
+ for(let i of arr2){
+    console.log(i);
+ }
 
-let arr3 = [10,20,"hi",true,false,NaN,undefined,10n,10.5,null]
-console.log(arr3);
-console.log(arr3[2]);
+ console.log(arr2.includes(5));
+ console.log(arr2.includes(50));
+ console.log(arr2.includes(30));
+ console.log(arr2.includes(3));
+ 
+ let arr3=[45,25]
+ console.log(arr2.concat(arr3));
+ 
+let q=arr2.entries()
+console.log(q);
+for(let i of q){
+    console.log(i);
+}
 
-let arr4 = []
-console.log(arr4);//[]
-arr4.push(10,20)
+let arr4=[10,20,30,30,40,30,20,30,80,50]
+
 console.log(arr4);
-arr4.push(30);
-console.log(arr4);
+console.log(arr4.indexOf(30));
+console.log(arr4.lastIndexOf(30));
 
-arr4.shift()
-console.log(arr4);
+let w=arr4.filter((s)=>{
+    return s>30
+})
 
-arr4.unshift("hi",50)
-console.log(arr4);
-arr4.unshift(true)
-console.log(arr4);   
-
+console.log(w);
